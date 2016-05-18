@@ -4,10 +4,19 @@
     <scoreDefinitionType>HARD_SOFT</scoreDefinitionType>
     <ksessionName>defaultKieSession</ksessionName>
   </scoreDirectorFactory>
-  <termination xStreamId="4">
-    <secondsSpentLimit>40</secondsSpentLimit>
+  <termination xStreamId="4"> <!-- Solver termination -->
+    <secondsSpentLimit>60</secondsSpentLimit>
     <minutesSpentLimit>0</minutesSpentLimit>
     <hoursSpentLimit>0</hoursSpentLimit>
     <daysSpentLimit>0</daysSpentLimit>
   </termination>
+  <constructionHeuristic>
+    <constructionHeuristicType>FIRST_FIT</constructionHeuristicType>
+  </constructionHeuristic>
+   <localSearch>
+    <localSearchType>TABU_SEARCH</localSearchType>
+    <termination><!-- Phase termination -->
+      <secondsSpentLimit>40</secondsSpentLimit><!-- Give the next phase a chance to run too, before the Solver terminates -->
+    </termination>
+   </localSearch>
 </solver>
