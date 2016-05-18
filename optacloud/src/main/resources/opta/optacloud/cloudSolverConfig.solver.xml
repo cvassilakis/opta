@@ -5,7 +5,7 @@
     <ksessionName>defaultKieSession</ksessionName>
   </scoreDirectorFactory>
   <termination xStreamId="4">
-    <secondsSpentLimit>20</secondsSpentLimit>
+    <secondsSpentLimit>40</secondsSpentLimit>
     <minutesSpentLimit>0</minutesSpentLimit>
     <hoursSpentLimit>0</hoursSpentLimit>
     <daysSpentLimit>0</daysSpentLimit>
